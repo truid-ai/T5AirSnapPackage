@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "T5AirSnapPackage",
-            targets: ["T5AirSnapPackage"]),
+            targets: ["T5AirSnapFramework"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -18,11 +18,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "T5AirSnapPackage",
-            dependencies: []),
-        .testTarget(
-            name: "T5AirSnapPackageTests",
-            dependencies: ["T5AirSnapPackage"]),
+        .binaryTarget(name: "T5AirSnapFramework", url: "https://truid.ai/ios/T5AirSnapFramework.xcframework.zip",checksum: "7d563947ed8bc001a3c8589f2fc8a740906e77afb6feeae80b3f35b1aa56109c")
+
     ]
 )
