@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .binaryTarget(name: "T5AirSnapFramework", url: "https://truid.ai/ios/T5AirSnapFramework.xcframework.zip",checksum: "7d563947ed8bc001a3c8589f2fc8a740906e77afb6feeae80b3f35b1aa56109c")
+        .binaryTarget(name: "T5AirSnapFramework", url: "https://truid.ai/ios/T5AirSnapFrameworkLatest.xcframework.zip")
 
     ]
 )
